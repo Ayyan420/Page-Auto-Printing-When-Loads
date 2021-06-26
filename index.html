@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+h1 {
+    font-family: arial;
+    text-align: center;
+}
+</style>
+
+<body>
+    <h1>This Page Will Auto Print</h1>
+    <script>
+    (function() {
+        // body of the function
+        window.setTimeout(() => window.print(), 500);
+    }());
+
+
+    const myWindow = window.open(neededurl, '_blank');
+    myWindow.document.close(); //missing code
+    myWindow.focus();
+    myWindow.print();
+    </script>
+</body>
+
+</html>
